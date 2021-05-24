@@ -14,7 +14,7 @@ function compute() {
     var year = new Date().getFullYear() + parseInt(years);
     //if block ensures principal is positive
     if (principal <= 0) {
-        document.getElementById("result").innerHTML = "Enter a positive principal";
+        alert("Enter a positive principal");
         principal.focus();
         principal.scrollIntoView();
     }
